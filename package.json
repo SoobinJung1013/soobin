@@ -4,6 +4,7 @@
   "description": "This repository contains the code for my personal portfolio website.",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://SoobinJung1013.github.io/soobin",
   "scripts": {
     "start": "http-server"
   },
