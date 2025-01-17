@@ -2,7 +2,9 @@ import {
   bio,
   skills,
   education,
-  experience,
+  workExperiences,
+  projects,
+  activities,
   trekking,
   footer,
 } from "./user-data/data.js";
@@ -111,6 +113,103 @@ function populateTrekking(items) {
     divAnimateBox.append(divProgressWrap);
 
     skillsTag.append(divAnimateBox);
+  });
+}
+
+function populateProjects(items, id) {
+  const container = document.getElementById(id);
+  items.forEach((project) => {
+    const article = document.createElement("article");
+    article.className = "timeline-entry animate-box";
+
+    const innerDiv = document.createElement("div");
+    innerDiv.className = "timeline-entry-inner";
+
+    const iconDiv = document.createElement("div");
+    iconDiv.className = "timeline-icon color-3";
+    const icon = document.createElement("i");
+    icon.className = `fa fa-${project.icon}`;
+    iconDiv.append(icon);
+
+    const labelDiv = document.createElement("div");
+    labelDiv.className = "timeline-label";
+
+    const h2 = document.createElement("h2");
+    h2.innerHTML = `${project.title} <span>${project.duration}</span>`;
+
+    const subTitle = document.createElement("span");
+    subTitle.className = "timeline-sublabel";
+    subTitle.innerHTML = project.subtitle;
+
+    labelDiv.append(h2, subTitle);
+
+    project.details.forEach((detail) => {
+      const detailP = document.createElement("p");
+      detailP.innerHTML = `&blacksquare; ${detail}`;
+      labelDiv.append(detailP);
+    });
+
+    const tagsDiv = document.createElement("div");
+    project.tags.forEach((tag) => {
+      const tagSpan = document.createElement("span");
+      tagSpan.className = "badge";
+      tagSpan.innerHTML = tag;
+      tagsDiv.append(tagSpan);
+    });
+
+    labelDiv.append(tagsDiv);
+    innerDiv.append(iconDiv, labelDiv);
+    article.append(innerDiv);
+    container.append(article);
+  });
+}
+
+// Function to populate activities
+function populateActivities(items, id) {
+  const container = document.getElementById(id);
+  items.forEach((activity) => {
+    const article = document.createElement("article");
+    article.className = "timeline-entry animate-box";
+
+    const innerDiv = document.createElement("div");
+    innerDiv.className = "timeline-entry-inner";
+
+    const iconDiv = document.createElement("div");
+    iconDiv.className = "timeline-icon color-4";
+    const icon = document.createElement("i");
+    icon.className = `fa fa-${activity.icon}`;
+    iconDiv.append(icon);
+
+    const labelDiv = document.createElement("div");
+    labelDiv.className = "timeline-label";
+
+    const h2 = document.createElement("h2");
+    h2.innerHTML = `${activity.title} <span>${activity.duration}</span>`;
+
+    const subTitle = document.createElement("span");
+    subTitle.className = "timeline-sublabel";
+    subTitle.innerHTML = activity.subtitle;
+
+    labelDiv.append(h2, subTitle);
+
+    activity.details.forEach((detail) => {
+      const detailP = document.createElement("p");
+      detailP.innerHTML = `&blacksquare; ${detail}`;
+      labelDiv.append(detailP);
+    });
+
+    const tagsDiv = document.createElement("div");
+    activity.tags.forEach((tag) => {
+      const tagSpan = document.createElement("span");
+      tagSpan.className = "badge";
+      tagSpan.innerHTML = tag;
+      tagsDiv.append(tagSpan);
+    });
+
+    labelDiv.append(tagsDiv);
+    innerDiv.append(iconDiv, labelDiv);
+    article.append(innerDiv);
+    container.append(article);
   });
 }
 
@@ -455,7 +554,10 @@ fetchBlogsFromMedium(medium);
 fetchReposFromGit(gitRepo);
 fetchGitConnectedData(gitConnected);
 
-populateExp_Edu(experience, "experience");
+populateExp_Edu(workExperiences, "workExperiences");
+populateProjects(projects, "projects");
+populateActivities(activities, "activities");
+
 populateTrekking(trekking);
 populateExp_Edu(education, "education");
 

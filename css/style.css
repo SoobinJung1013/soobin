@@ -678,8 +678,8 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 #projects h2 {
-  color: #374054;
-  margin-bottom: 50px;
+  color: #f0f0f0;
+  /* margin-bottom: 50px; */
 }
 
 .project {
@@ -711,7 +711,7 @@ body.offcanvas .colorlib-nav-toggle {
   font-size: 1.5em;
   font-weight: 300;
   color: #374054;
-  margin: 0 0 15px 0;
+  margin: 0 0 0 0;
 }
 
 .project-info p {
@@ -869,7 +869,7 @@ body.offcanvas .colorlib-nav-toggle {
   .timeline-entry
   .timeline-entry-inner
   .timeline-icon.color-4 {
-  background: #a84cb8;
+  background: #000000;
 }
 .timeline-centered
   .timeline-entry
@@ -1093,7 +1093,7 @@ body.offcanvas .colorlib-nav-toggle {
   border-color: #000000 transparent transparent transparent;
 }
 .services.color-4 .icon {
-  background: #a84cb8;
+  background: #000000;
 }
 .services.color-4 .icon:before {
   border-color: transparent transparent #a84cb8 transparent;
@@ -2075,14 +2075,14 @@ footer ul {
 }
 
 .col-title {
-  color: var(--color);
+  color: #f0f0f0;
   font-size: 1.1em;
   font-weight: 600;
   padding: 0.5em 0;
 }
 
 .col-list a {
-  color: var(--color-smooth);
+  color: #f0f0f0;
   text-decoration: none;
   line-height: 1.4;
   font-weight: 400;
