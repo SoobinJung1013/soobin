@@ -1,0 +1,23 @@
+{
+  "name": "soobin-portfolio",
+  "version": "1.0.0",
+  "description": "This repository contains the code for my personal portfolio website.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoobinJung1013/soobin.git"
+  },
+  "author": "soobin jung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoobinJung1013/soobin/issues"
+  },
+  "homepage": "https://github.com/SoobinJung1013/soobin#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
