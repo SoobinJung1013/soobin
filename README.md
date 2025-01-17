@@ -70,41 +70,22 @@ This project is hosted using **GitHub Pages**. Follow the steps below to deploy 
    git push origin main
    ```
 
-2. **Enable GitHub Pages:**
-
-   - Go to your repository on GitHub.
-   - Navigate to **Settings** > **Pages**.
-   - Under the **Source** section, select the `main` branch and `/ (root)` folder.
-   - Click **Save**.
-
-3. **Access your deployed site:**
-   - GitHub Pages will provide a URL where your site is hosted (e.g., `https://<username>.github.io/soobin`).
-
-### SPA (Single Page Application) Configuration
-
-If your portfolio uses client-side routing (e.g., React Router), create a `404.html` file to redirect all routes to `index.html`. Add this file in the root directory:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=./" />
-  </head>
-  <body></body>
-</html>
-```
-
 ---
 
 ## Project Structure
 
 ```
 project-folder/
+├── LICENSE
+├── README.md
+├── css
+├── images
 ├── index.html
 ├── index.js
-├── style.css
-├── images/
-└── other-assets/
+├── js
+├── package-lock.json
+├── package.json
+└── user-data
 ```
 
 - **index.html**: Main HTML file.
