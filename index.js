@@ -128,7 +128,7 @@ function populateBlogs(items, id) {
           border-radius: 12px;
           padding: 16px;
           font-size: 14px;
-          background: linear-gradient(135deg, rgb(255, 221, 153), rgb(249, 191, 63));
+          background: linear-gradient(135deg, rgb(51, 51, 51), rgb(17, 17, 17));
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
           min-height: 150px;
           cursor: pointer;
@@ -146,7 +146,8 @@ function populateBlogs(items, id) {
     const blogTitle = document.createElement("h4");
     blogTitle.className = "blog-heading";
     blogTitle.innerHTML = items[i].title;
-    blogTitle.style = "margin: 0 0 8px; font-size: 18px; font-weight: bold;";
+    blogTitle.style =
+      "margin: 0 0 8px; font-size: 18px; font-weight: bold; color: #F0F0F0;";
     blogLink.appendChild(blogTitle);
 
     // Publish Date
@@ -162,7 +163,8 @@ function populateBlogs(items, id) {
     const html = items[i].content;
     const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
     blogDescription.innerHTML = doc;
-    blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: #666;";
+    blogDescription.style =
+      "margin: 0 0 12px; font-size: 12px; color: rgba(255, 255, 255, 0.841);";
     blogLink.appendChild(blogDescription);
 
     // Categories (Tags)
@@ -212,7 +214,7 @@ function populateRepo(items, id) {
           border-radius: 12px;
           padding: 16px;
           font-size: 14px;
-          background: linear-gradient(135deg, #ffdd99, #f9bf3f);
+          background: linear-gradient(135deg, rgb(85, 85, 85), rgb(0, 0, 0));
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
           transition: transform 0.2s ease-in-out;
           cursor: pointer;
@@ -220,7 +222,8 @@ function populateRepo(items, id) {
 
     // Make the card clickable by wrapping the content inside an anchor tag
     const repoLink = document.createElement("a");
-    repoLink.href = `https://github.com/${items[i].author}/${items[i].name}`;
+    // repoLink.href = `https://github.com/${items[i].author}/${items[i].name}`;
+    repoLink.href = `https://github.com/SoobinJung1013`;
     repoLink.target = "_blank";
     repoLink.style =
       "text-decoration: none; color: black; display: block; height: 100%;";
@@ -238,7 +241,8 @@ function populateRepo(items, id) {
     const repoDescription = document.createElement("p");
     repoDescription.className = "repo-description";
     repoDescription.innerHTML = items[i].description;
-    repoDescription.style = "margin-top: 8px; font-size: 12px; color: #555;";
+    repoDescription.style =
+      "margin-top: 8px; font-size: 12px; color: rgba(255, 255, 255, 0.841)";
     repoLink.appendChild(repoDescription);
 
     // Stats row (Language, Stars, Forks)
@@ -249,7 +253,7 @@ function populateRepo(items, id) {
           gap: 16px; 
           margin-top: 12px; 
           font-size: 12px; 
-          color: #666;
+          color: rgba(255, 255, 255, 0.841);
       `;
 
     // Language

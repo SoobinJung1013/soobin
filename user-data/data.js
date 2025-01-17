@@ -79,11 +79,11 @@ export const experience = [
 ];
 
 export const trekking = [
-  '<strong>Kheerganga Trek</strong>, Himachal Pradesh (9,711 feet)',
-  '<strong>Triund Trek</strong>, Himachal Pradesh (9,350 feet)',
-  '<strong>Kedarkantha Trek</strong>, Uttarakhand (12,500 feet)',
-  '<strong>Jalori Pass Trek</strong>, Himachal Pradesh (10,800 feet)',
-  '<strong>Vaishno Devi Trek</strong>, Jammu & Kashmir (5,200 feet)',
+  "<strong>Kheerganga Trek</strong>, Himachal Pradesh (9,711 feet)",
+  "<strong>Triund Trek</strong>, Himachal Pradesh (9,350 feet)",
+  "<strong>Kedarkantha Trek</strong>, Uttarakhand (12,500 feet)",
+  "<strong>Jalori Pass Trek</strong>, Himachal Pradesh (10,800 feet)",
+  "<strong>Vaishno Devi Trek</strong>, Jammu & Kashmir (5,200 feet)",
 ];
 
 export const education = [
@@ -160,11 +160,11 @@ export const footer = [
       //   },
       {
         text: "Buy me a coffee",
-        link: "https://www.buymeacoffee.com/r194dME8y",
+        link: "https://judy-valentine.gitbook.io/soobin",
       },
       {
         text: "Github",
-        link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
+        link: "https://github.com/SoobinJung1013",
       },
     ],
   },
