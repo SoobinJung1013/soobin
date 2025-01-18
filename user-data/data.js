@@ -243,63 +243,46 @@ export const education = [
 
 export const trekking = [
   "<strong>Chungbuk National University</strong>, College of Electronics and Information (3.8/4.5)",
-  "     <strong>Department of Information and Communication Engineering</strong>",
-  "     <strong>Duration:</strong> March 2019 - August 2024 (Expected Graduation)",
+  "└── <strong>Department of Information and Communication Engineering</strong>",
+  "└── <strong>Duration:</strong> March 2019 - August 2024 (Expected Graduation)",
 ];
 
 export const footer = [
-  //   {
-  //     label: "Dev Profiles",
-  //     data: [
-  //       {
-  //         text: "Stackoverflow",
-  //         link: "https://stackoverflow.com/users/8461233/vinay-somawat",
-  //       },
-  //       {
-  //         text: "GitHub",
-  //         link: "https://github.com/vinaysomawat",
-  //       },
-  //       {
-  //         text: "LeetCode",
-  //         link: "https://leetcode.com/somawatvinay/",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     label: "Resources",
-  //     data: [
-  //       {
-  //         text: "Enable Dark/Light Mode",
-  //         func: "enableDarkMode()",
-  //       },
-  //       {
-  //         text: "Print this page",
-  //         func: "window.print()",
-  //       },
-  //       {
-  //         text: "Clone this page",
-  //         link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
-  //       },
-  //     ],
-  //   },
   {
     label: "Links",
     data: [
       {
+        text: "Email",
+        link: "mailto:judyb0626@gmail.com",
+      },
+      {
         text: "Linkedin",
         link: "https://www.linkedin.com/in/judy-valentine/",
-      },
-      //   {
-      //     text: "Twitter",
-      //     link: "https://twitter.com/thesigmakid",
-      //   },
-      {
-        text: "Blog",
-        link: "https://judy-valentine.gitbook.io/soobin",
       },
       {
         text: "Github",
         link: "https://github.com/SoobinJung1013",
+      },
+      {
+        text: "Blog",
+        link: "https://judy-valentine.gitbook.io/soobin",
+      },
+    ],
+  },
+  {
+    label: "Resources",
+    data: [
+      // {
+      //   text: "Enable Dark/Light Mode",
+      //   func: "enableDarkMode()",
+      // },
+      {
+        text: "Print this page",
+        func: "window.print()",
+      },
+      {
+        text: "Clone this page",
+        link: "https://github.com/SoobinJung1013/soobin",
       },
     ],
   },
@@ -307,4 +290,5 @@ export const footer = [
     label: "copyright-text",
     data: ["Made with &hearts; by Vinay Somawat"],
   },
+  ,
 ];
